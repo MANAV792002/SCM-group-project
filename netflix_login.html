@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" type="image/x-icon" href="image/netflix icon.png">
+    <style>
+        html{
+            background-image: url('image/Netflix.jpg');
+            background-repeat: no-repeat;
+            background-size: 1380px 658px;
+        }
+        .container{
+            background-color:rgba(0, 0, 0,0.85);
+            position: absolute;
+            left: 450px;
+            height: 400px;
+            width: 400px;
+            border-radius: 15px;
+            top: 150px;
+            box-sizing: border-box;
+        }
+        .contant{
+            position:absolute;
+            top: 50px;
+            left: 70px;
+            box-sizing: border-box;
+        }
+        label{
+            font-size: 32px;
+            color: rgb(243, 237, 237);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .username{
+            margin: 13px;
+    border-radius: 4px;
+    height: 42px;
+    width: 255px;
+    display: block;
+    position: relative;
+    right: 17px;
+    background-color: #333;
+    outline: none;
+    border: #333;
+    font-size: 18px;
+    padding: 0px 21px;
+    box-sizing: border-box;
+        }
+        .username:hover{
+            color: black;
+            background-color: rgb(68, 65, 65);
+        }
+        .submit{
+            position: absolute;
+    top: 230px;
+    left: 65px;
+    height: 40px;
+    border-radius: 4px;
+    width: 260px;
+    background-color: rgb(194, 1, 1);
+    border: rgb(194, 1, 1);
+    font-size: 21px;
+        }
+        .submit:hover{
+            cursor: pointer;
+            background-color: red;
+        }
+        h1{
+            color: red;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .remember{
+            position: absolute;
+            top: 300px;
+            left: -32px;
+
+        }
+        .text{
+            position: relative;
+            bottom: 4px;
+            left: 91px;
+            color: white;
+        }
+        #remember{
+            position: relative;
+            top: 0px;
+            left: 92px;
+        }
+        #remember:checked,#remember:hover{
+            cursor: pointer;
+        }
+        .need {
+            position: absolute;
+            top: 225px;
+            left: 349px;
+            text-decoration: none;
+            color: white;
+            /* color: black; */
+            font-size: 15px;
+            display: inline-block;
+            width: 72px;
+        }
+        .need:hover{
+            text-decoration: underline;
+        }
+        .sign_up{
+            position: relative;
+            top: 369px;
+            left: 503px;
+            display: inline-block;
+        }
+        .sign_up span{
+            color: #737373;
+        }
+        .sign_up a{
+            text-decoration: none;
+            color: white;
+        }
+        .sign_up a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="abhiflix">
+        <h1>NETFLIX</h1>
+    </div>
+    <form action="netflix.html">
+        <div class="container">
+            <div class="contant">
+                <label for="page">Sign in</label><br>
+                <input type="text" name="username" class="username" placeholder="Email or Phone Number">
+                <input type="password" name="password" class="username" placeholder="Password">
+            </div>
+            <a href="netflix2.0.html" target="_blank"><button type="submit" class="submit">Sign In</button></a>
+            <div class="remember">
+                <input type="checkbox" name="check" id="remember">
+                <span class="text">remember me</span>
+            </div>
+        </div>
+    </form>
+    <div class="need">
+        <a href="netflix_signup1.html"></a>
+        <span><a href="https://www.netflix.com/in/LoginHelp" class="need" target="_blank">Need Help?</a></span>
+    </div>
+    <div class="sign_up">
+        <span>New to Netflix</span>
+        <a href="netflix_signup1.html">Sign up Now</a>
+    </div>
+</body>
+</html>

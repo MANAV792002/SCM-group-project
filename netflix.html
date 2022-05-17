@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="netflix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="image/netflix icon.png">
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <div class="logo">
+                NETFLIX
+            </div>
+            <DIV>
+                <a href="#" class="active">Home</a>
+            </DIV>
+            <div>
+                <a href="#Shows" class="inactive">Tv Shows</a>
+            </div>
+            <div>
+                <a href="#Trending" class="inactive">Movies</a>
+            </div>
+            <div>
+                <a href="#" class="inactive">New & Popular</a>
+            </div>
+            <div>
+                <a href="#My_List" class="inactive">My List</a>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="search header_sub3">
+                <label for="search">
+                <i class="fas fa-search" id="search_icon" onclick="myfunction()"></i></label>
+            </div>
+            <input type="text" placeholder="Title,People,genre" class="form__input" id="search" onkeyup="result()">
+            <div class="header_sub1">
+                <a href="#">Children</a>
+            </div>
+            <div class="notification header_sub2">
+                <i class="fas fa-bell"></i>
+                <div class="notification_box">
+                    <div class="notification_title">
+                        <div >
+                            <img src="image/free.jpg" alt="" >
+                        </div>
+                        <div>
+                            <p>New Arriva</p>
+                            <p>top 10 today:Free Guy</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="notification_title">
+                        <div >
+                            <img src="image/hawkeye.png" alt="" >
+                        </div>
+                        <div>
+                            <p>New Arriva</p>
+                            <p>top 10 today:Hawkeye</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="notification_title">
+                        <div >
+                            <img src="image/lock.jpg" alt="" >
+                        </div>
+                        <div>
+                            <p>New Arriva</p>
+                            <p>top 10 today:Lock & key</p>
+                        </div>
+                    </div>
+                    <div class="notification_title">
+                        <div >
+                            <img src="image/venom.jpg" alt="" >
+                        </div>
+                        <div>
+                            <p>New Arriva</p>
+                            <p>top 10 today:Venom</p>
+                        </div>
+                    </div>
+                    <div class="notification_title">
+                        <div >
+                            <img src="image/spider.jpg" alt="" >
+                        </div>
+                        <div>
+                            <p>New Arriva</p>
+                            <p>top 10 today:Spider Man</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile_section header_sub1" id="#profile">
+                <div class="profile_all">
+                    <div class="main_profile">
+                        <div class="profile">
+                            
+                        </div>
+                        <div class="down">
+                            <i class="fas fa-sort-down" id="down"></i>
+                        </div>
+                    </div>
+                    <div class="sub_profile">
+                        <div class="sub_profile_part">
+                            <div >
+                                <img src="image/daredevil.jpg" alt="" >
+                            </div>
+                            <div>
+                                <p>Abhishek</p>
+                            </div>
+                        </div>
+                        <div class="sub_profile_part">
+                            <div >
+                                <img src="image/profile_pic2.png" alt="" >
+                            </div>
+                            <div>
+                                <p>Kusum</p>
+                            </div>
+                        </div>
+                        <div class="sub_profile_part">
+                            <div >
+                                <img src="image/netflix_profile.jpg" alt="" >
+                            </div>
+                            <div>
+                                <p>Children</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="profile_manage">Manage profile</p>
+                        </div>
+                        <hr>
+                        <div class="remaining_profile">
+                            <div>
+                                <p>Account</p>
+                            </div>
+                            <div>
+                                <p>Help Center</p>
+                            </div>
+                            <div>
+                                <a href="netflix_login.html"><p>Sign Out of Netflix</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="slider subsection1">
+            <video class="video" autoplay muted poster="image/witcher.jpg" id="video" loop>
+                <source src="image/Y2Mate.is - THE WITCHER  MAIN TRAILER  NETFLIX-ndl1W4ltcmg-1080p-1643099799799.mp4" type="Video/mp4">
+            </video>
+        </div>
+        <div class="banner">
+            <div class="sub-banner">
+                <div class="name_banner">
+                    <p>The Witcher</p>
+                </div>
+                <div class="banner_detail">
+                    <p>The witcher Geralt, a mutated monster hunter, struggles to find his place in a world in which people often prove more wicked than beasts.</p>
+                </div>
+                <div class="button">
+                    <div class="play-button">
+                        <a href="image/Y2Mate.is - THE WITCHER  MAIN TRAILER  NETFLIX-ndl1W4ltcmg-1080p-1643099799799.mp4"><button class="play_button1"><i class="fas fa-play"></i>play</button></a>
+                        <button class="Play_button2"><i class="fas fa-info-circle"></i>More Info</button>
+                    </div>
+                    <div id="volume">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <div id="volume1">
+                        <i class="fas fa-volume-mute"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subsection2">
+            <div class="container">
+                <div class="movies_genre">
+                    <p>Trending Now</p>
+                </div>
+                <div class="movies" id="Trending">
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/stranger.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - Stranger Things  Official Final Trailer  Netflix-b9EkMc79ZSU-720p-1640593269895.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <a href="image/Y2Mate.is - CONJURING 3 Official Trailer (2021)-lHBiFx25tA8-480p-1640591625668.mp4"><i class="fas fa-chevron-down"></i></a>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/fast.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - JOKER - Final Trailer - Now Playing In Theaters-zAGVQLHvwOY-480p-1640198634878.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/venom2.jpeg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - JUSTICE LEAGUE - Official Trailer 1-3cxixDgHUYw-720p-1640592053883.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/queen2.png" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - JOKER - Final Trailer - Now Playing In Theaters-zAGVQLHvwOY-480p-1640198634878.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/elite.jpeg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - CONJURING 3 Official Trailer (2021)-lHBiFx25tA8-480p-1640591625668.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/free.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - THE WITCHER  MAIN TRAILER  NETFLIX-ndl1W4ltcmg-1080p-1643099799799.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/friend.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - Stranger Things  Official Final Trailer  Netflix-b9EkMc79ZSU-720p-1640593269895.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/joke_slider.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - SPIDER-MAN FAR FROM HOME - Official Teaser Trailer-DYYtuKyMtY8-720p-1640591952652.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next" onclick="next()">
+                    <i class="fas fa-chevron-right icon101"></i>
+                </div>
+                <div class="prev" onclick="prev()">
+                    <i class="fas fa-chevron-left icon101"></i>
+                </div>
+            </div>
+            <div class="container" id="link-movies">
+                <div class="movies_genre">
+                    <p>Movies</p>
+                </div>
+                <div class="movies" id="movies">
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/inception.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - JOKER - Final Trailer - Now Playing In Theaters-zAGVQLHvwOY-480p-1640198634878.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/end.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - SPIDER-MAN FAR FROM HOME - Official Teaser Trailer-DYYtuKyMtY8-720p-1640591952652.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/bird.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - Stranger Things  Official Final Trailer  Netflix-b9EkMc79ZSU-720p-1640593269895.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/john.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - SPIDER-MAN FAR FROM HOME - Official Teaser Trailer-DYYtuKyMtY8-720p-1640591952652.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/kong.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - Stranger Things  Official Final Trailer  Netflix-b9EkMc79ZSU-720p-1640593269895.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/free.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - THE WITCHER  MAIN TRAILER  NETFLIX-ndl1W4ltcmg-1080p-1643099799799.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/ludo.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - JUSTICE LEAGUE - Official Trailer 1-3cxixDgHUYw-720p-1640592053883.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/joke_slider.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - CONJURING 3 Official Trailer (2021)-lHBiFx25tA8-480p-1640591625668.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next" onclick="next1()">
+                    <i class="fas fa-chevron-right icon101"></i>
+                </div>
+                <div class="prev" onclick="prev1()">
+                    <i class="fas fa-chevron-left icon101"></i>
+                </div>
+            </div>
+            <div class="container">
+                <div class="movies_genre">
+                    <p>Tv Shows</p>
+                </div>
+                <div class="movies" id="Shows">
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/elite.jpeg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - JOKER - Final Trailer - Now Playing In Theaters-zAGVQLHvwOY-480p-1640198634878.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/hellhound.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - JUSTICE LEAGUE - Official Trailer 1-3cxixDgHUYw-720p-1640592053883.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/lock2.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - SPIDER-MAN FAR FROM HOME - Official Teaser Trailer-DYYtuKyMtY8-720p-1640591952652.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/queen2.png" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - Stranger Things  Official Final Trailer  Netflix-b9EkMc79ZSU-720p-1640593269895.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/ozark.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - THE WITCHER  MAIN TRAILER  NETFLIX-ndl1W4ltcmg-1080p-1643099799799.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/lost.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - CONJURING 3 Official Trailer (2021)-lHBiFx25tA8-480p-1640591625668.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/friend.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - JOKER - Final Trailer - Now Playing In Theaters-zAGVQLHvwOY-480p-1640198634878.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/money.png" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - JUSTICE LEAGUE - Official Trailer 1-3cxixDgHUYw-720p-1640592053883.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next" onclick="next2()">
+                    <i class="fas fa-chevron-right icon101"></i>
+                </div>
+                <div class="prev" onclick="prev2()">
+                    <i class="fas fa-chevron-left icon101"></i>
+                </div>
+            </div>
+            <div class="container">
+                <div class="movies_genre">
+                    <p>My List</p>
+                </div>
+                <div class="movies" id="My_List">
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/money.png" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - SPIDER-MAN FAR FROM HOME - Official Teaser Trailer-DYYtuKyMtY8-720p-1640591952652.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/queen2.png" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - Stranger Things  Official Final Trailer  Netflix-b9EkMc79ZSU-720p-1640593269895.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/conjuring1.jpeg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - THE WITCHER  MAIN TRAILER  NETFLIX-ndl1W4ltcmg-1080p-1643099799799.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/lost.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - CONJURING 3 Official Trailer (2021)-lHBiFx25tA8-480p-1640591625668.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/elite.jpeg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - JOKER - Final Trailer - Now Playing In Theaters-zAGVQLHvwOY-480p-1640198634878.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/free.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - JUSTICE LEAGUE - Official Trailer 1-3cxixDgHUYw-720p-1640592053883.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/friend.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - SPIDER-MAN FAR FROM HOME - Official Teaser Trailer-DYYtuKyMtY8-720p-1640591952652.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scale">
+                        <div class="item">
+                            <img src="image/joke_slider.jpg" alt="">
+                        </div>
+                        <div class="part-scale">
+                            <div class="move">
+                                <div class="sub-part-scale">
+                                    <div class="super-sub-scale">
+                                        <div>
+                                            <a href="image/Y2Mate.is - Stranger Things  Official Final Trailer  Netflix-b9EkMc79ZSU-720p-1640593269895.mp4"><i class="fas fa-play"></i></a>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-thumbs-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-part1-scale">
+                                    <span class="season">S1:E1</span>
+                                    <span class="episode">"Differnt But Same"</span>
+                                </div>
+                                <div class="genre">
+                                    <p>Fantasy</p>
+                                    <span>.</span>
+                                    <p>Crime</p>
+                                    <span>.</span>
+                                    <p>Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next" onclick="next3()">
+                    <i class="fas fa-chevron-right icon101"></i>
+                </div>
+                <div class="prev" onclick="prev3()">
+                    <i class="fas fa-chevron-left icon101"></i>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- <script>
+        console.log("hello world");
+        var sliderMain = document.getElementById('movies');
+        var item = sliderMain.getElementsByClassName('item');
+        function next(){
+            sliderMain.append(item[0])
+        }
+    </script> -->
+    <script>
+        function myfunction(){
+            // console.log("hello yar")
+            var input = document.getElementById('search');
+            var search_icon = document.getElementById('search_icon');
+            if(input=focus){
+                search_icon.style.transform = "translateX(26px)"
+            }
+            if(input!=focus){
+                search_icon.style.transform = "translateX(-26px)"
+            }
+        }
+        var container = document.getElementById('Trending');
+        var series = document.getElementById('movies')
+        var movies = document.getElementById('Shows')
+        var mylist = document.getElementById('My_List')
+        var currentslide = 0;
+        var currentslide1 = 0;
+        var currentslide2 = 0;
+        var currentslide3 = 0;
+        function next(){
+            if(currentslide>=3){
+                gotoslide(0);
+                currentslide=0;
+                return;
+            }
+            currentslide++
+            gotoslide(currentslide);
+        }
+        function next1(){
+            if(currentslide1>=3){
+                gotoslide1(0);
+                currentslide1=0;
+                return;
+            }
+            currentslide1++
+            gotoslide1(currentslide1);
+        }
+        function next2(){
+            if(currentslide2>=3){
+                gotoslide2(0);
+                currentslide2=0;
+                return;
+            }
+            currentslide2++
+            gotoslide2(currentslide2);
+        }
+        function next3(){
+            if(currentslide3>=3){
+                gotoslide3(0);
+                currentslide3=0;
+                return;
+            }
+            currentslide3++
+            gotoslide3(currentslide3);
+        }
+        function gotoslide(slidenumber){
+            container.style.transform="translateX(-"+245*slidenumber+"px)";
+        }
+        function gotoslide1(slidenumber){
+            series.style.transform="translateX(-"+245*slidenumber+"px)";
+        }
+        function gotoslide2(slidenumber){
+            movies.style.transform="translateX(-"+245*slidenumber+"px)";
+        }
+        function gotoslide3(slidenumber){
+            mylist.style.transform="translateX(-"+245*slidenumber+"px)";
+        }
+        function prev(){
+            if(currentslide<=0){
+                gotoslide(3);
+                currentslide=3;
+                return;
+            }
+            currentslide--
+            gotoslide(currentslide);
+        }
+        function prev1(){
+            if(currentslide1<=0){
+                gotoslide1(3);
+                currentslide1=3;
+                return;
+            }
+            currentslide1--
+            gotoslide1(currentslide1);
+        }
+        function prev2(){
+            if(currentslide2<=0){
+                gotoslide2(3);
+                currentslide2=3;
+                return;
+            }
+            currentslide2--
+            gotoslide2(currentslide2);
+        }
+        function prev3(){
+            if(currentslide3<=0){
+                gotoslide3(3);
+                currentslide3=3;
+                return;
+            }
+            currentslide3--
+            gotoslide3(currentslide3);
+        }
+        // function prev(){
+        //     console.log(a);
+        //     container.style.transform="translateX(-"+(245*a)+"+"+(245*b)+"px)";
+        //     console.log(container.style.transform="translateX(-"+((245*a)+(245*b))+"px)");
+        //     b=b+1
+        //     a=a-1
+        // }
+        let volume = document.getElementById('volume')
+        let vid = document.getElementById('video')
+        let volume1 = document.getElementById('volume1')
+        volume1.addEventListener('click',mute)
+        volume.addEventListener('click',unmute)
+        function unmute(){
+                vid.muted = false;
+                volume.style.display = "none";
+                volume1.style.display = "flex";
+        }
+        function mute(){
+            vid.muted = true;
+            volume1.style.display = "none";
+            volume.style.display = "flex";
+        };
+        function result(){
+            var input = document.getElementById('search');
+            var search = document.getElementById('search_icon');
+            var value = input.value.toLowerCase();
+            pic = document.querySelectorAll('.item img')
+            for(i=0;32>i;i++){
+                src = pic[i].getAttribute('src')
+                console.log(pic[i]);
+                if(src == `image/${value}.jpg` || value == "" || src == `image/${value}.jpeg`|| src == `image/${value}.png`){
+                    pic[i].style.display = "block";
+                }
+                else{
+                    pic[i].style.display = "none";
+                }
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>
